@@ -14,7 +14,13 @@ class homepage extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          child: Text("Welcome $hello to $days din  of flutter!!"),
+          child: Text(
+            "Welcome $hello to $days \n din  of flutter!!",
+            style: TextStyle(
+              fontSize: 20,
+              color: Colors.black,
+            ),
+          ),
         ),
       ),
       drawer: Drawer(),
