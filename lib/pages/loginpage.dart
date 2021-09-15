@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class loginpage extends StatelessWidget {
@@ -6,17 +8,58 @@ class loginpage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      child: Center(
-        child: Text(
-          "Login page",
-          style: TextStyle(
-            fontSize: 30,
-            color: Colors.deepPurple,
-            fontWeight: FontWeight.bold,
-          ),
-          textScaleFactor: 2.0,
-        ),
-      ),
-    );
+        color: Colors.white,
+        child: Column(
+          children: [
+            Image.asset("assets/pictures/image1.png"),
+            SizedBox(
+              height: 30,
+              child: Text("Powered by Sidmon"),
+            ),
+            Text(
+              "Welcome Shopper!",
+              style: TextStyle(
+                fontSize: 25,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(
+              height: 30,
+              child: Text("Enter Your Details"),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                vertical: 25,
+                horizontal: 35,
+              ),
+              child: Column(
+                children: [
+                  TextFormField(
+                    decoration: InputDecoration(
+                      hintText: "Enter your Name",
+                      labelText: "USERNAME",
+                    ),
+                  ),
+                  TextFormField(
+                    obscureText: true,
+                    decoration: InputDecoration(
+                      hintText: "Input the Password",
+                      labelText: "PASSWORD",
+                    ),
+                  ),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  ElevatedButton(
+                      onPressed: () {
+                        print("Hey there!!");
+                      },
+                      child: Text("Login"),
+                      style: TextButton.styleFrom())
+                ],
+              ),
+            )
+          ],
+        ));
   }
 }
