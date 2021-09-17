@@ -8,7 +8,7 @@ class MyDrawer extends StatelessWidget {
         "https://th.bing.com/th/id/R.853c41a88a8cb41d10adfdb6754b9311?rik=cxgTESH8GRCrtA&riu=http%3a%2f%2fimg00.deviantart.net%2f743f%2fi%2f2010%2f083%2f6%2fc%2fdarth_vader_by_raikoh14.jpg&ehk=8zg5MBdeUHnX6uGTEyWuWPFZsRDE19lJ8tgVtAZMacA%3d&risl=&pid=ImgRaw&r=0";
     return Drawer(
       child: Container(
-        color: Colors.grey,
+        color: Colors.lightGreen,
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
@@ -16,7 +16,7 @@ class MyDrawer extends StatelessWidget {
               padding: EdgeInsets.zero,
               child: UserAccountsDrawerHeader(
                 decoration: BoxDecoration(
-                  color: Colors.deepPurple,
+                  color: Colors.lightGreen,
                 ),
                 margin: EdgeInsets.zero,
                 accountName: Text("Sidharth Mohan"),
